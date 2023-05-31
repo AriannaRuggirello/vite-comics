@@ -1,19 +1,25 @@
 <script>
-import Header from './components/Header.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'
 
 export default {
   components: {
-    Header
+    AppHeader,
+    AppFooter
   }
 }
 
 </script>
 
 <template>
-  <Header msg="Vite + Vue" />
+  <div class="container">
+    <AppHeader />
+  </div>
+  <AppFooter />
 </template>
 
 <style lang="scss" >
 @use './styles/partials/variables.scss' as *;
+@use './styles/partials/mixin.scss' as *;
 @use './styles/general.scss' as *;
 </style>
