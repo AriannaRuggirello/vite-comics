@@ -8,6 +8,30 @@ export default {
     <footer>
         <div class="up">
             <div class="container">
+                <div>
+                    <img src="/buy-comics-digital-comics.png" alt="">
+                    <span>digital comics</span>
+                </div>
+
+                <div>
+                    <img src="/buy-comics-digital-comics.png" alt="">
+                    <span>digital comics</span>
+                </div>
+
+                <div>
+                    <img src="/buy-comics-digital-comics.png" alt="">
+                    <span>digital comics</span>
+                </div>
+
+                <div>
+                    <img src="/buy-comics-digital-comics.png" alt="">
+                    <span>digital comics</span>
+                </div>
+
+                <div>
+                    <img src="/buy-comics-digital-comics.png" alt="">
+                    <span>digital comics</span>
+                </div>
 
             </div>
 
@@ -72,7 +96,14 @@ export default {
                 </button>
 
                 <div class="icons">
-                    <h2>follow us</h2>
+                    <span>FOLLOW US!</span>
+                    <img src="footer-facebook.png" alt="">
+                    <img src="footer-periscope.png" alt="">
+                    <img src="footer-pinterest.png" alt="">
+                    <img src="footer-twitter.png" alt="">
+                    <img src="footer-youtube.png" alt="">
+
+
                 </div>
             </div>
 
@@ -88,9 +119,30 @@ export default {
 footer {
     padding: 30px 0;
 
+    img {
+        max-width: 50px;
+    }
+
     .up {
         background-color: #0282f9;
-        height: 70px;
+        padding: 15px 0;
+
+        .container {
+            @include content-center;
+
+            div {
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: white;
+                    padding-left: 5px;
+                }
+
+            }
+
+
+        }
     }
 
     .middle {
@@ -114,15 +166,41 @@ footer {
 
     .down {
         background-color: #303030;
+        padding: 20px 0;
 
         .container {
             @include content-center;
 
+            div {
+                display: flex;
+                align-items: center;
+            }
+
+            button {
+                border: #0282f9 1px solid;
+                background-color: #303030;
+                color: white;
+                padding: 10px;
+            }
+
+            span {
+                color: #0282f9;
+                font-weight: bold;
+            }
+
+            .icons {
+
+                img,
+                span {
+                    margin-right: 15px;
+                }
+
+            }
+
+
         }
 
-        h2 {
-            color: white;
-        }
+
     }
 
 }
