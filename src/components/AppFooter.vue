@@ -1,6 +1,42 @@
 <script>
 export default {
-    name: "AppFooter"
+    name: "AppFooter",
+    data() {
+        return {
+            upIcons: [
+                {
+                    title: 'DIGITAL COMICS',
+                    image: "/buy-comics-digital-comics.png"
+
+                },
+
+                {
+                    title: 'DC MERCHANDISE',
+                    image: "/buy-comics-merchandise.png"
+
+                },
+
+                {
+                    title: 'SUBSCRIPTION',
+                    image: "/buy-comics-subscriptions.png"
+
+                },
+
+                {
+                    title: 'COMIC SHOP LOCATOR',
+                    image: "/buy-comics-shop-locator.png"
+
+                },
+
+                {
+                    title: 'DC POWER VISA',
+                    image: "/buy-dc-power-visa.svg"
+
+                },
+            ]
+        }
+    }
+
 }
 </script>
 
@@ -8,29 +44,9 @@ export default {
     <footer>
         <div class="up">
             <div class="container">
-                <div>
-                    <img src="/buy-comics-digital-comics.png" alt="">
-                    <span>digital comics</span>
-                </div>
-
-                <div>
-                    <img src="/buy-comics-digital-comics.png" alt="">
-                    <span>digital comics</span>
-                </div>
-
-                <div>
-                    <img src="/buy-comics-digital-comics.png" alt="">
-                    <span>digital comics</span>
-                </div>
-
-                <div>
-                    <img src="/buy-comics-digital-comics.png" alt="">
-                    <span>digital comics</span>
-                </div>
-
-                <div>
-                    <img src="/buy-comics-digital-comics.png" alt="">
-                    <span>digital comics</span>
+                <div v-for="upIcon in upIcons">
+                    <img :src="upIcon.image" alt="">
+                    <span>{{ upIcon.title }}</span>
                 </div>
 
             </div>
@@ -92,7 +108,7 @@ export default {
         <div class="down">
             <div class="container">
                 <button>
-                    sign up now!
+                    SIGN-UP NOW!
                 </button>
 
                 <div class="icons">
@@ -117,11 +133,9 @@ export default {
 @use '../styles/general.scss' as *;
 
 footer {
-    padding: 30px 0;
 
-    img {
-        max-width: 50px;
-    }
+
+
 
     .up {
         background-color: #0282f9;
@@ -133,6 +147,10 @@ footer {
             div {
                 display: flex;
                 align-items: center;
+
+                img {
+                    width: 40px;
+                }
 
                 span {
                     color: white;
@@ -146,7 +164,7 @@ footer {
     }
 
     .middle {
-        background-color: #232323;
+        background-image: url(/footer-bg.jpg);
         padding: 10px 0;
         color: white;
 

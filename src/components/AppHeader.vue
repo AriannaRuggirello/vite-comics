@@ -77,9 +77,8 @@ export default {
     <header>
         <div class="container">
             <img src="/dc-logo.png" alt="">
-            <div v-for="link in links">
-                <a :href="link.url" :class="link.active ? 'active' : ''">{{ link.text }}</a>
-
+            <div>
+                <a v-for="link in links" :href="link.url" :class="link.active ? 'active' : ''">{{ link.text }}</a>
 
             </div>
         </div>
@@ -96,12 +95,18 @@ header {
     padding: 10px 0;
 
     .container {
+
         @include content-center;
+
+        img {
+            max-width: 60px;
+        }
 
         div a {
             color: #303030;
             font-weight: bold;
             text-decoration: none;
+            padding: 0 5px;
 
             &.active,
             &:hover {
