@@ -1,6 +1,74 @@
 <script>
 export default {
-    name: "AppHeader"
+    name: "AppHeader",
+    data() {
+        return {
+            links: [
+                {
+                    text: 'CHARACTERS',
+                    url: '#',
+                    active: false
+
+                },
+
+                {
+                    text: 'COMICS',
+                    url: '#',
+                    active: true
+
+                },
+
+                {
+                    text: 'MOVIES',
+                    url: '#',
+                    active: false
+
+                },
+
+                {
+                    text: 'GAMES',
+                    url: '#',
+                    active: false
+
+                },
+
+                {
+                    text: 'COLLECTIBLES',
+                    url: '#',
+                    active: false
+
+                },
+
+                {
+                    text: 'VIDEOS',
+                    url: '#',
+                    active: false
+
+                },
+
+                {
+                    text: 'FANS',
+                    url: '#',
+                    active: false
+
+                },
+
+                {
+                    text: 'NEWS',
+                    url: '#',
+                    active: false
+
+                },
+
+                {
+                    text: 'SHOP',
+                    url: '#',
+                    active: false
+
+                },
+            ]
+        }
+    }
 }
 
 </script>
@@ -9,11 +77,9 @@ export default {
     <header>
         <div class="container">
             <img src="/dc-logo.png" alt="">
-            <div>
-                <a href="#">link1</a>
-                <a href="#">link1</a>
-                <a href="#">link1</a>
-                <a href="#">link1</a>
+            <div v-for="link in links">
+                <a :href="link.url" :class="link.active ? 'active' : ''">{{ link.text }}</a>
+
 
             </div>
         </div>
@@ -31,6 +97,18 @@ header {
 
     .container {
         @include content-center;
+
+        div a {
+            color: #303030;
+            font-weight: bold;
+            text-decoration: none;
+
+            &.active,
+            &:hover {
+                color: #0282f9;
+                border-bottom: 2px solid #0282f9;
+            }
+        }
     }
 
 }
