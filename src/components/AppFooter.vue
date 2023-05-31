@@ -56,7 +56,7 @@ export default {
         <div class="middle">
             <div class="container">
                 <div>
-                    <h4>TITOLO</h4>
+                    <h4>DC COMICS</h4>
                     <ul>
                         <li>parola</li>
                         <li>parola</li>
@@ -67,37 +67,40 @@ export default {
                         <li>parola</li>
                     </ul>
 
-                    <h4>TITOLO</h4>
+                    <h4>SHOP</h4>
                     <ul>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>TITOLO</h4>
-                    <ul>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
                         <li>parola</li>
                         <li>parola</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4>TITOLO</h4>
+                    <h4>DC</h4>
                     <ul>
                         <li>parola</li>
                         <li>parola</li>
                         <li>parola</li>
                         <li>parola</li>
+                        <li>parola</li>
+                        <li>parola</li>
+                        <li>parola</li>
+                        <li>parola</li>
+                        <li>parola</li>
+                        <li>parola</li>
+                        <li>parola</li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>SITES</h4>
+                    <ul>
+                        <li>parola</li>
+                        <li>parola</li>
+                        <li>parola</li>
+                        <li>parola</li>
+                        <li>parola</li>
+
                     </ul>
                 </div>
             </div>
@@ -134,9 +137,6 @@ export default {
 
 footer {
 
-
-
-
     .up {
         background-color: #0282f9;
         padding: 15px 0;
@@ -157,6 +157,8 @@ footer {
                     padding-left: 5px;
                 }
 
+
+
             }
 
 
@@ -172,6 +174,7 @@ footer {
             display: flex;
 
             div {
+                padding-top: 10px;
                 margin-right: 15px;
             }
 
@@ -179,6 +182,8 @@ footer {
 
         ul {
             list-style: none;
+            padding-bottom: 10px;
+            color: gray;
         }
     }
 
@@ -195,7 +200,7 @@ footer {
             }
 
             button {
-                border: #0282f9 1px solid;
+                border: #0282f9 3px solid;
                 background-color: #303030;
                 color: white;
                 padding: 10px;
