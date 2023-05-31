@@ -110,8 +110,8 @@ header {
 
             &.active,
             &:hover {
-                color: #0282f9;
-                border-bottom: 2px solid #0282f9;
+                color: $primary-color;
+                border-bottom: 2px solid $primary-color;
             }
         }
     }

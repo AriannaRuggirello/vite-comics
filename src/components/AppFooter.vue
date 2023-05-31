@@ -138,7 +138,7 @@ export default {
 footer {
 
     .up {
-        background-color: #0282f9;
+        background-color: $primary-color;
         padding: 15px 0;
 
         .container {
@@ -200,14 +200,14 @@ footer {
             }
 
             button {
-                border: #0282f9 3px solid;
+                border: $primary-color 3px solid;
                 background-color: #303030;
                 color: white;
                 padding: 10px;
             }
 
             span {
-                color: #0282f9;
+                color: $primary-color;
                 font-weight: bold;
             }
 
