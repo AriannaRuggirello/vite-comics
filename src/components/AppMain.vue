@@ -100,7 +100,9 @@ export default {
             <button>CURRENT SERIES</button>
             <div class="main-cards">
                 <MainCards v-for="(slide, index) in slides" :key="index" :details="slide" />
-
+            </div>
+            <div class="load">
+                <button>LOAD MORE</button>
             </div>
 
 
@@ -116,6 +118,7 @@ export default {
 
 main {
     background-color: black;
+    padding-bottom: 30px;
 
     .hero {
         height: 300px;
@@ -124,11 +127,15 @@ main {
     }
 
     button {
+
         background-color: $primary-color ;
         color: white;
+        font-size: larger;
         border-style: none;
-        padding: 10px;
+        padding: 15px;
         font-weight: bold;
+        position: relative;
+        top: -20px;
     }
 
     .main-cards {
@@ -136,8 +143,21 @@ main {
         flex-wrap: wrap;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+
+    .load {
+        display: flex;
+        justify-content: center;
+
+        button {
+            width: 200px;
+            font-size: small;
+        }
 
     }
+
+
+
 
 
 
