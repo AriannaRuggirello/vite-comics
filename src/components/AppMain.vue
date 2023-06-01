@@ -9,7 +9,13 @@ export default {
 
 <template>
     <main>
-        <h1> contenuto qui</h1>
+        <div class="hero">
+
+        </div>
+        <div class="container">
+
+        </div>
+
     </main>
 </template>
 
@@ -19,12 +25,18 @@ export default {
 @use '../styles/general.scss' as *;
 
 main {
-    background-color: black;
-    height: 100px;
-    @include content-center;
 
-    h1 {
-        color: white;
+    .hero {
+        height: 300px;
+        background-image: url("/jumbotron.jpg");
+        background-size: cover
+    }
+
+    .container {
+        @include content-center;
+
+
+
     }
 }
 </style>
