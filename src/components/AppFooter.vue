@@ -33,7 +33,7 @@ export default {
                     image: "/buy-dc-power-visa.svg"
 
                 },
-            ]
+            ],
         }
     }
 
