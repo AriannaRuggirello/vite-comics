@@ -55,54 +55,61 @@ export default {
 
         <div class="middle">
             <div class="container">
-                <div>
-                    <h4>DC COMICS</h4>
-                    <ul>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                    </ul>
+                <div class="content-left">
+                    <div>
+                        <h4>DC COMICS</h4>
+                        <ul>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                        </ul>
 
-                    <h4>SHOP</h4>
-                    <ul>
-                        <li>parola</li>
-                        <li>parola</li>
-                    </ul>
+                        <h4>SHOP</h4>
+                        <ul>
+                            <li>parola</li>
+                            <li>parola</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>DC</h4>
+                        <ul>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>SITES</h4>
+                        <ul>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+                            <li>parola</li>
+
+                        </ul>
+                    </div>
                 </div>
 
-                <div>
-                    <h4>DC</h4>
-                    <ul>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-
-                    </ul>
+                <div class="content-right">
+                    <img src="/dc-logo-bg.png" alt="">
                 </div>
 
-                <div>
-                    <h4>SITES</h4>
-                    <ul>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-                        <li>parola</li>
-
-                    </ul>
-                </div>
             </div>
 
 
@@ -137,6 +144,7 @@ export default {
 
 footer {
 
+
     .up {
         background-color: $primary-color;
         padding: 15px 0;
@@ -166,17 +174,32 @@ footer {
     }
 
     .middle {
+        max-height: 350px;
         background-image: url(/footer-bg.jpg);
-        padding: 10px 0;
+
         color: white;
 
         .container {
-            display: flex;
+            @include content-center;
 
-            div {
-                padding-top: 10px;
-                margin-right: 15px;
+            .content-left {
+                display: flex;
+
+                div {
+                    margin-right: 10px;
+                }
             }
+
+            .content-right {
+                img {
+                    height: 450px;
+                    position: relative;
+                    top: -30px;
+                    right: 25%;
+                }
+            }
+
+
 
         }
 
@@ -188,6 +211,7 @@ footer {
     }
 
     .down {
+        position: relative;
         background-color: #303030;
         padding: 20px 0;
 
