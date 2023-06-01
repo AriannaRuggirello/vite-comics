@@ -176,17 +176,18 @@ footer {
     .middle {
         max-height: 350px;
         background-image: url(/footer-bg.jpg);
-
         color: white;
 
         .container {
-            @include content-center;
+            display: flex;
+            justify-content: space-between;
 
             .content-left {
                 display: flex;
+                padding-top: 40px;
 
                 div {
-                    margin-right: 10px;
+                    margin-right: 30px;
                 }
             }
 
